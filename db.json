@@ -1,0 +1,7 @@
+{
+    "transactions": [
+      { "id": 1, "date": "2024-08-01", "description": "Grocery Store", "category": "Food", "amount": 50.25 },
+      { "id": 2, "date": "2024-08-02", "description": "Gas Station", "category": "Transport", "amount": 40.00 }
+    ]
+  }
+  
