@@ -13,19 +13,19 @@ const TransactionForm = ({ onAddTransaction }) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value // Update formData with new value
     });
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    onAddTransaction(formData);
+    e.preventDefault(); // Prevent form from refreshing page
+    onAddTransaction(formData); // Call onAddTransaction with formData
     setFormData({
       date: '',
       description: '',
       category: '',
       amount: ''
-    });
+    }); // Reset form data
   };
 
   return (
