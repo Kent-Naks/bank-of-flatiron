@@ -70,27 +70,28 @@ Footer Information:
 
 File Structure
 bank-of-flatiron/
-\── public/
-   ── favicon.ico
-   ── index.html
-   ── logo192.png
-   ── logo512.png
-   ── manifest.json
-   ── robots.txt
-\── src/
-   ── components/
-      ── SearchBar.js
-      ── TransactionForm.css
-      ── TransactionForm.js
-      ── TransactionTable.css
-      ── TransactionTable.js
-   ── App.css
-   ── App.js
-   ── App.test.js
-   ── index.css
-   ── index.js
-   ── reportWebVitals.js
-\── dg.json
-\── package.json
-\── README.md
+\ -- public/
+    -- favicon.ico          // 
+    -- index.html           // Main HTML template file for the React app
+    -- logo192.png          // 
+    -- logo512.png          // 
+    -- manifest.json        // Manifest file for Progressive Web App (PWA) settings
+    -- robots.txt           // 
+\ -- src/
+     -- components/
+        \ -- SearchBar.js        // React component for the search bar
+        \ -- TransactionForm.css // CSS styles for the TransactionForm component
+        \ -- TransactionForm.js  // React component for the transaction form
+        \ -- TransactionTable.css// CSS styles for the TransactionTable component
+        \ -- TransactionTable.js // React component for displaying the transaction table
+     \ -- App.css                // CSS styles for the App component and overall app
+     \ -- App.js                 // Main App component that houses other components
+     \ -- App.test.js            // Test file for the App component
+     \ -- index.css              // Global CSS styles for the application
+     \ -- index.js               // Entry point for the React application
+     \ -- reportWebVitals.js     // 
+\ -- dg.json                    // JSON file with sample transaction data for the mock server
+\ -- package.json               // Metadata and dependencies for the project
+\ -- README.md                  // Detailed information about the project (file yenye tuko)
+
 
