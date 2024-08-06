@@ -1,4 +1,5 @@
 import React from 'react';
+import './TransactionTable.css';
 
 const TransactionTable = ({ transactions, onSort, onDelete }) => {
   return (
@@ -42,3 +43,4 @@ const TransactionTable = ({ transactions, onSort, onDelete }) => {
 };
 
 export default TransactionTable;
+

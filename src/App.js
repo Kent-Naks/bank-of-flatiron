@@ -7,6 +7,7 @@ import TransactionTable from './components/TransactionTable';
 function App() {
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
 
   useEffect(() => {
     fetch('http://localhost:8003/transactions')
@@ -38,10 +39,22 @@ function App() {
     setTransactions(updatedTransactions);
   };
 
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+    document.body.style.backgroundColor = isDarkTheme ? 'gray' : '#1c1c1c';
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>Bank of Flatiron</h1>
+        <div className="header-buttons">
+          <button>Login</button>
+          <button>Logout</button>
+        </div>
+        <button className="theme-toggle" onClick={toggleTheme}>
+          Toggle Theme
+        </button>
       </header>
       <SearchBar onSearch={handleSearch} />
       <TransactionForm onAddTransaction={addTransaction} />
@@ -50,11 +63,13 @@ function App() {
         onSort={sortTransactions}
         onDelete={deleteTransaction} 
       />
+      <footer className="footer">
+        <p>Contact List: 0726699291</p>
+        <p>Email: <a href="mailto:BankofFlatiron@gmail.com">BankofFlatiron@gmail.com</a></p>
+        <p><a href="#">Career</a></p>
+      </footer>
     </div>
   );
 }
 
 export default App;
-
-
-
